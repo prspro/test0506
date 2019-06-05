@@ -1,0 +1,82 @@
+.topper
+	padding-top: 9px
+	background: repeating-linear-gradient(to bottom, $pseudoBlue, $pseudoBlue 3px, $pseudoBlue2 0, $pseudoBlue2 6px, $pseudoBlue3 0, $pseudoBlue3 9px,$topperBG 0, $topperBG 100%)
+	.line
+		display: flex
+		align-items: center
+		//padding: 12px 0
+		.tel-pic
+			display: inline-block
+			width: 16px
+			height: 12px
+			background-color: red
+			margin-right: 8px
+		.tel-num
+			font-family: $SegoeUI
+			color: $topperTxt
+			font-size: 11px
+			line-height: 0.8
+			letter-spacing: 0.3px
+			display: inline-block
+			margin-right: 107px
+		.text
+			font-family: $Bitter-R
+			font-size: 12px
+			color: $topperTxt2
+			line-height: 0.8
+			letter-spacing: 0.3px
+			display: inline-block
+			margin-right: auto
+			.link-login
+				color: $topperTxt3
+				text-decoration: none
+			.link-acc
+				color: $topperTxt3
+				text-decoration: none
+		.language
+			margin-right: 24px
+			.language-btn
+				font-family: $SegoeUI-B
+				color: $topperTxt2
+				text-transform: uppercase
+				font-size: 11px
+				letter-spacing: 1.1px
+				line-height: 36px
+				border: none
+				outline: none
+				margin-right: 1px
+				padding: 0 10px
+				background-color: $btnBG
+				transition: color .5s, background .5s
+				cursor: pointer
+				&:last-of-type
+					margin-right: 0
+				&:hover
+					color: white
+					background-color: $pseudoBlue
+				&--selected
+					color: white
+					background-color: $pseudoBlue
+		.currency
+			.currency-btn
+				font-family: $Bitter-B
+				color: $topperTxt2
+				text-transform: uppercase
+				font-size: 11px
+				letter-spacing: 1.1px
+				line-height: 36px
+				border: none
+				outline: none
+				margin-right: 1px
+				padding: 0 10px
+				background-color: $btnBG
+				transition: color .5s, background .5s
+				cursor: pointer
+				&:last-of-type
+					margin-right: 0
+				&:hover
+					color: white
+					background-color: $pseudoBlue
+				&--selected
+					color: white
+					background-color: $pseudoBlue
