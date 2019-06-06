@@ -19,6 +19,12 @@
 
 @media (min-width: 992px) {
   .container {
+    width: 975px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
     width: 984px;
   }
 }
