@@ -1,7 +1,7 @@
 .topper
 	padding-top: 9px
 	background: repeating-linear-gradient(to bottom, $pseudoBlue, $pseudoBlue 3px, $pseudoBlue2 0, $pseudoBlue2 6px, $pseudoBlue3 0, $pseudoBlue3 9px,$topperBG 0, $topperBG 100%)
-	.line
+	.bar
 		display: flex
 		align-items: center
 		//padding: 12px 0
@@ -30,9 +30,15 @@
 			.link-login
 				color: $topperTxt3
 				text-decoration: none
+				transition: color .5s
+				&:hover
+					color: black
 			.link-acc
 				color: $topperTxt3
 				text-decoration: none
+				transition: color .5s
+				&:hover
+					color: black
 		.language
 			margin-right: 24px
 			.language-btn
