@@ -27,6 +27,16 @@ $(document).ready(function(){
       }
     ]  
   });
+
+  
+  $('.language-btn').on('click', function() {
+    $('.language-btn').removeClass('language-btn--selected');
+    $(this).addClass('language-btn--selected');
+  })
+  $('.currency-btn').on('click', function() {
+    $('.currency-btn').removeClass('currency-btn--selected');
+    $(this).addClass('currency-btn--selected');
+  })
 });
 
 $(document).on("click", function(e) {
