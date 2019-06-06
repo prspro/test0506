@@ -1,16 +1,40 @@
 .header
 	padding: 38px 0 0 0 
 	margin-bottom: 20px
+	+r(991)
+		padding-top: 20px
 	.control-bar
 		display: flex
 		align-items: center
 		margin-bottom: 63px
+		+r(991)
+			margin-bottom: 20px
+		+r(767)
+			flex-wrap: wrap
+			justify-content: space-between
+		+r(575)
+			flex-direction: column
+			align-items: center
 		.logo
 			text-decoration: none
 			margin-right: 121px
+			+r(991)
+				margin-right: 20px
+			+r(767)
+				flex-basis: 50%
+				margin-right: 0
+			+r(575)
+				flex-basis: auto
+				margin-bottom: 10px
 			.logo-pic
 				transform: translate(-8px, 2px)
 				//text-decoration: none
+				+r(991)
+					//transform: none
+					width: 99px
+					height: 42px
+				+r(767)
+					transform: none
 			.logo-txt
 				font-family: $Bitter-I
 				font-size: 11px
@@ -19,11 +43,20 @@
 				letter-spacing: 0.3px
 				//text-decoration: none
 				padding: 0 0 0 11px
+				+r(991)
+					display: none
 		.search
 			//padding: 0 10px
 			position: relative
 			line-height: 0
 			margin-right: auto
+			+r(767)
+				text-align: right
+				flex-basis: 50%
+			+r(575)
+				flex-basis: auto
+				margin-right: 0
+				margin-bottom: 10px
 			.field
 				box-sizing: border-box
 				border: 1px solid $gray5
@@ -36,6 +69,10 @@
 				//display: inline-block
 				width: 207px
 				outline: none
+				+r(991)
+					width: 150px
+					font-size: 10px
+					padding: 0 25px 0 10px
 				&::placeholder
 					color: $topperTxt2
 					opacity: 1
@@ -54,9 +91,14 @@
 				width: 14px
 				background: url('../img/Search.png') no-repeat center
 				cursor: pointer
+				+r(991)
+					right: 7px
 		.user-menu
 			margin-right: 14px
 			line-height: 0
+			+r(575)
+				margin-right: 0
+				margin-bottom: 10px
 			.menu-item
 				display: inline-block
 				position: relative
@@ -75,6 +117,10 @@
 					line-height: 35px
 					transition: background .5s	
 					border-radius: 3px
+					+r(991)
+						padding: 0 5px
+						margin: 0 3px
+						font-size: 10px
 					&:hover
 						//color: $pseudoBlue
 						background-color: $topperTxt3
@@ -150,6 +196,9 @@
 				border-radius: 3px
 				box-shadow: 1px 1px 5px 1px rgba(132,132,132,1)
 				padding: 20px
+				+r(575)
+					right: 50%
+					transform: translate(50%, 2px)
 				.title
 					font-family: $Bitter-R
 					font-size: 13px
@@ -261,6 +310,8 @@
 		.menu-item
 			display: inline-block
 			position: relative
+			+r(575)
+				width: 33.33%
 			&::after
 				content: ''
 				position: absolute
@@ -286,6 +337,12 @@
 				outline: none
 				border: none
 				transition: color .5s, background .5s
+				+r(991)
+					font-size: 11px
+					padding: 0 10px
+					line-height: 35px
+				+r(575)
+					width: 100%
 				&--selected
 					color: white
 					background-color: $pseudoBlue2	
@@ -300,6 +357,10 @@
 				background-color: $mainColor
 				border: 1px solid $gray6
 				box-shadow: 0px 0px 3px 0px rgba(132,132,132,1)
+				&--inverted
+					+r(575)
+						left: 100%
+						transform: translate(-100%, 2px) translateX(-2px)
 				.sub-menu-item
 					font-family: $Bitter-R
 					font-size: 13px

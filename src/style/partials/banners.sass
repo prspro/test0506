@@ -3,23 +3,49 @@
 		display: flex
 		align-items: stretch
 		justify-content: space-between
+		+r(575)
+			display: block
 		.banner
 			display: flex
 			align-items: center
 			padding: 11px 16px
 			border: solid 1px $gray6
 			width: 312px
+			+r(991)
+				padding: 7px
+				width: auto
+			+r(767)
+				flex-direction: column
+			+r(575)
+				flex-direction: row
+				justify-content: center
 			.pic-col
 				margin-right: 18px
+				+r(991)
+					margin-right: 10px
+				+r(767)
+					margin-right: 0
+					margin-bottom: 10px
+				+r(575)
+					margin-right: 10px
+					margin-bottom: 0
 			.text-col
+				+r(767)
+					text-align: center
+				+r(575)
+					min-width: 150px
 				.title
 					font-family: $Bitter-R
-					font: 24px
+					font-size: 24px
 					color: $topperTxt
 					letter-spacing: 0.6px
 					margin-bottom: 5px
+					+r(991)
+						font-size: 17px
 				.text
 					font-family: $SegoeUI-L
 					font: 20px
 					color: $topperTxt2
 					letter-spacing: 0.5px
+					+r(991)
+						font-size: 13px

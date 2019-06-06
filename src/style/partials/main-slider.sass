@@ -6,8 +6,17 @@
 			position: relative
 			.text-col
 				padding: 70px 134px 260px 0
-				//width: 500px
-				float: right	
+				float: right
+				+r(991)
+					padding: 40px 90px 200px 0	
+				+r(767)
+					padding: 40px 50px 120px 0
+				+r(575)
+					float: none
+					padding: 40px 30px 60px 30px
+					text-align: center
+					position: relative
+					z-index: 10
 				.marked 
 					padding: 3px 9px
 					background-color: transparentize(white, 0.3)
@@ -17,31 +26,47 @@
 					letter-spacing: 0.9px
 					color: $gray8
 					margin-bottom: 18px
+					+r(991)
+						font-size: 25px
+					+r(767)
+						font-size: 20px
 				.description
 					font-family: $Bitter-R
 					font-size: 16px
 					letter-spacing: 0.4px
 					line-height: 1.87
-					color: $gray8			
+					color: $gray8	
+					+r(991)
+						font-size: 12px	
+					+r(767)
+						font-size: 10px	
 			.image
 				position: absolute
 				top: 0px
 				left: 0px
 				transform: translate(40px, 50px)
+				+r(991)
+					width: 384px
+					height: 356px
+					transform: translate(40px, 0)
+				+r(767)
+					width: 256px
+					height: 237px
+					top: 50%
+					transform: translate(40px, -50%)
+				+r(575)
+					transform: translate(0, -50%)
 		.custom-dots
 			position: absolute
 			bottom: 20px
 			right: 20px
 			list-style: none
-			//display: block
 			text-align: center
 			padding: 0
 			margin: 0
-			//width: 100%
-			+r(991)
-				bottom: 32px
 			+r(767)
-				bottom: -30px
+				left: 50%
+				transform: translate(-50%, 0)
 			li 
 				position: relative
 				display: inline-block
@@ -50,9 +75,6 @@
 				margin: 0 16px 0 0
 				padding: 0
 				//background-color: $pseudoGrayBg2
-				+r(767)
-					height: 12px
-					width: 12px
 				button
 					//cursor: pointer
 					border-radius: 50%
@@ -68,9 +90,6 @@
 					//color: transparent
 					padding: 0
 					cursor: pointer
-					+r(767)
-						height: 12px
-						width: 12px
 			.slick-active
 				button
 					background-color: white

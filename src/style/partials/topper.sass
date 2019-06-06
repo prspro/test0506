@@ -9,8 +9,10 @@
 			display: inline-block
 			width: 16px
 			height: 12px
-			background-color: red
+			background: url('../img/icon-phone.png') no-repeat center
 			margin-right: 8px
+			+r(575)
+				display: none
 		.tel-num
 			font-family: $SegoeUI
 			color: $topperTxt
@@ -19,6 +21,10 @@
 			letter-spacing: 0.3px
 			display: inline-block
 			margin-right: 107px
+			+r(991)
+				margin-right: auto
+			+r(575)
+				display: none
 		.text
 			font-family: $Bitter-R
 			font-size: 12px
@@ -27,6 +33,8 @@
 			letter-spacing: 0.3px
 			display: inline-block
 			margin-right: auto
+			+r(991)
+				display: none
 			.link-login
 				color: $topperTxt3
 				text-decoration: none
@@ -41,6 +49,8 @@
 					color: black
 		.language
 			margin-right: 24px
+			+r(575)
+				margin-right: auto
 			.language-btn
 				font-family: $SegoeUI-B
 				color: $topperTxt2
@@ -57,13 +67,16 @@
 				cursor: pointer
 				&:last-of-type
 					margin-right: 0
-				&:hover
-					color: white
-					background-color: $pseudoBlue
+				&:not(.language-btn--selected)
+					&:hover
+						//color: white
+						background-color: $blue4
 				&--selected
 					color: white
 					background-color: $pseudoBlue
 		.currency
+			+r(575)
+				margin-right: 0
 			.currency-btn
 				font-family: $Bitter-B
 				color: $topperTxt2
@@ -80,9 +93,10 @@
 				cursor: pointer
 				&:last-of-type
 					margin-right: 0
-				&:hover
-					color: white
-					background-color: $pseudoBlue
+				&:not(.currency-btn--selected)
+					&:hover
+						//color: white
+						background-color: $blue4
 				&--selected
 					color: white
 					background-color: $pseudoBlue
