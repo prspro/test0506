@@ -1,0 +1,85 @@
+.overlay
+	display: none
+	position: fixed
+	overflow: hidden
+	z-index: 25
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	background-color: rgba(0, 0, 0, .6)
+	.reg-box
+		position: absolute
+		padding: 100px 150px
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: #fff
+		text-align: center
+		.cross
+			position: absolute
+			top: 28px
+			right: 28px
+			height: 18px
+			width: 15px
+			cursor: pointer
+			&:hover
+				&::before
+					background-color: red
+				&::after
+					background-color: red
+			&::before
+				position: absolute
+				content: ''
+				height: 1px
+				width: 15px
+				background-color: $topperTxt3
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%) rotate(45deg)
+			&::after
+				position: absolute
+				content: ''
+				height: 1px
+				width: 15px
+				background-color: $topperTxt3
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%) rotate(-45deg)	
+		.title
+			font-family: $Bitter-B
+			font-size: 34px
+			color: $topperTxt2
+			margin-bottom: 25px
+			+r(767)
+				font-size: 25px
+				margin-bottom: 10px
+		.form
+			.inpt
+				font-family: $SegoeUI-L
+				font-size: 14px
+				letter-spacing: 0.3px
+				color: $topperTxt2
+				display: block
+				margin: 0 auto 15px auto
+				line-height: 25px
+				outline: none
+				padding: 0 10px
+				border: 1px solid $gray5
+				transition: border .5s, box-shadow .5s
+				width: 180px
+				box-sizing: border-box
+				&:last-of-type
+					margin-bottom: 0
+					background-color: $pseudoBlue2
+					color: white
+					border: none
+					transition: background .5s
+					cursor: pointer
+					&:hover
+						background-color: $pseudoBlue3
+					&:focus
+						box-shadow: none
+				&:focus
+					border-color: $topperTxt3
+					box-shadow: 0px 0px 5px 0px $pseudoBlue2
