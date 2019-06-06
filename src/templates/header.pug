@@ -17,7 +17,24 @@ header.header
 						button#login.menu-btn Log In
 					li.menu-item
 						button#acc.menu-btn Sign Up
-				button.cart Cart $0.00
+				.cart
+					button.cart-btn Cart $0.00
+					.cart-added
+						.title Recently added item(s)
+						.added-item
+							img.pic-col(src="img/icon2.png", alt="image")
+							.text-col
+								.description Faddywax Fragrance Diffuser Set Gardenia
+								.sum 1 x $399.00
+							button.close-btn
+						.added-item
+							img.pic-col(src="img/icon2.png", alt="image")
+							.text-col
+								.description Faddywax Fragrance Diffuser Set Gardenia
+								.sum 1 x $399.00
+							button.close-btn
+						a.to-cart(href="#") View shopping cart
+						a.to-check(href="#") Proceed to Checkout
 			ul.main-menu
 				li.menu-item
 					button.menu-btn.menu-btn--selected home
