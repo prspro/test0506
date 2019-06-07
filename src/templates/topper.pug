@@ -1,4 +1,4 @@
-section.topper
+div.topper
 	.container
 		.row
 			.bar
@@ -6,14 +6,14 @@ section.topper
 				p.tel-num Call Us +777 (100) 1234
 				p.text 
 					| Welcome visitor you can 
-					a.link-login(href="#") login
+					a.link-acc(href="#") login
 					|  or
 					a.link-acc(href="#")  create an account.
 				.language
-					button.language-btn.language-btn--selected en
-					button.language-btn fr
-					button.language-btn gm
+					a.language-btn.language-btn--selected(href="#") en
+					a.language-btn(href="#") fr
+					a.language-btn(href="#") gm
 				.currency
-					button.currency-btn.currency-btn--selected $
-					button.currency-btn €
-					button.currency-btn £					
+					a(href="#").currency-btn.currency-btn--selected $
+					a(href="#").currency-btn €
+					a(href="#").currency-btn £					
