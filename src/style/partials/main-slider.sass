@@ -3,20 +3,29 @@
 	.slider
 		.slider-item
 			background: url('../img/bg.jpg') no-repeat center
+			background-size: cover
 			position: relative
+			padding: 70px 134px 260px 0
+			text-align: right
+			+r(991)
+				padding: 40px 90px 200px 0	
+			+r(767)
+				padding: 40px 50px 120px 0
+			+r(575)
+				padding: 40px 30px 60px 30px
+				text-align: center
 			.text-col
-				padding: 70px 134px 260px 0
-				float: right
+				//float: right
+				display: inline-block
+				text-align: left
+				max-width: 360px
+				position: relative
+				z-index: 10
 				+r(991)
-					padding: 40px 90px 200px 0	
-				+r(767)
-					padding: 40px 50px 120px 0
+					max-width: 260px
 				+r(575)
 					float: none
-					padding: 40px 30px 60px 30px
 					text-align: center
-					position: relative
-					z-index: 10
 				.marked 
 					padding: 3px 9px
 					background-color: transparentize(white, 0.3)

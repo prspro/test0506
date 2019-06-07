@@ -2,10 +2,10 @@ header.header
 	.container
 		.row
 			.control-bar
-				a.logo(href="#")
+				a.logo(href="/")
 					img.logo-pic(src="img/logo.png", alt="logo")
 					p.logo-txt Online Store Theme
-				form.search(action="/", method="post")
+				form.search(action="/", method="GET")
 					input.field(type="text", placeholder="Search entire store here...")
 					input.btn(type="submit", value="")
 				ul.user-menu
@@ -20,56 +20,18 @@ header.header
 				.cart
 					button.cart-btn Cart $0.00
 					.cart-added
-						.title Recently added item(s)
+						h3.title Recently added item(s)
 						.added-item
-							img.pic-col(src="img/icon2.png", alt="image")
+							img.pic-col(src="img/item1.jpg", alt="image")
 							.text-col
 								.description Faddywax Fragrance Diffuser Set Gardenia
 								.sum 1 x $399.00
 							button.close-btn
 						.added-item
-							img.pic-col(src="img/icon2.png", alt="image")
+							img.pic-col(src="img/item2.jpg", alt="image")
 							.text-col
 								.description Faddywax Fragrance Diffuser Set Gardenia
 								.sum 1 x $399.00
 							button.close-btn
-						a.to-cart(href="#") View shopping cart
-						a.to-check(href="#") Proceed to Checkout
-			ul.main-menu
-				li.menu-item
-					button.menu-btn.menu-btn--selected home
-				li.menu-item
-					button.menu-btn solids
-					ul.sub-menu
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-				li.menu-item
-					button.menu-btn liquids
-					ul.sub-menu.sub-menu--inverted
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-				li.menu-item
-					button.menu-btn spray
-					ul.sub-menu
-						li.sub-menu-item For home
-						li.sub-menu-item For Garden
-						li.sub-menu-item For car
-						li.sub-menu-item Other spray
-				li.menu-item
-					button.menu-btn electric
-					ul.sub-menu
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-				li.menu-item
-					button.menu-btn for cars
-					ul.sub-menu.sub-menu--inverted
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
-						li.sub-menu-item Lorem, ipsum.
+						a.link.link--to-cart(href="#") View shopping cart
+						a.link.link--to-check(href="#") Proceed to Checkout

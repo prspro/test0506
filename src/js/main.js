@@ -18,6 +18,7 @@ $(document).ready(function(){
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 576,
@@ -28,23 +29,28 @@ $(document).ready(function(){
     ]  
   });
 
-  
-  $('.language-btn').on('click', function() {
-    $('.language-btn').removeClass('language-btn--selected');
-    $(this).addClass('language-btn--selected');
+
+ function ButtonSwitch(btns, btn, cls) {
+  btns.removeClass(cls);
+  btn.addClass(cls);
+ }
+
+ const lng_btns = $('.language .switch-btn');
+ const curr_btns = $('.currency .switch-btn');
+ const cls_selected = 'switch-btn--selected';
+ 
+  lng_btns.on('click', function() {
+    ButtonSwitch(lng_btns, $(this), cls_selected);
   })
-  $('.currency-btn').on('click', function() {
-    $('.currency-btn').removeClass('currency-btn--selected');
-    $(this).addClass('currency-btn--selected');
+  curr_btns.on('click', function() {
+    ButtonSwitch(curr_btns, $(this), cls_selected);
   })
 });
 
 $(document).on("click", function(e) {
   const id = e.target.id;
   const overlay = $("#js_overlay");
-  
   if (id === "js_overlay" || id === "js_popup-close" || id === "js_login" || id === "js_acc") {
       overlay.fadeToggle();
-      //noScroll.toggle();
   }
 });

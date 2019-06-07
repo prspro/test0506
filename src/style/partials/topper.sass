@@ -4,7 +4,6 @@
 	.bar
 		display: flex
 		align-items: center
-		//padding: 12px 0
 		.tel-pic
 			display: inline-block
 			width: 16px
@@ -21,6 +20,7 @@
 			letter-spacing: 0.3px
 			display: inline-block
 			margin-right: 107px
+			text-decoration: none
 			+r(991)
 				margin-right: auto
 			+r(575)
@@ -31,7 +31,6 @@
 			color: $topperTxt2
 			line-height: 0.8
 			letter-spacing: 0.3px
-			display: inline-block
 			margin-right: auto
 			+r(991)
 				display: none
@@ -45,53 +44,30 @@
 			margin-right: 24px
 			+r(575)
 				margin-right: auto
-			.language-btn
-				font-family: $SegoeUI-B
-				color: $topperTxt2
-				text-transform: uppercase
-				font-size: 11px
-				letter-spacing: 1.1px
-				line-height: 36px
-				border: none
-				outline: none
-				margin-right: 1px
-				padding: 0 10px
-				background-color: $btnBG
-				transition: color .5s, background .5s
-				text-decoration: none
-				display: inline-block
-				&:last-of-type
-					margin-right: 0
-				&:not(.language-btn--selected)
-					&:hover
-						//color: white
-						background-color: $blue4
-				&--selected
-					color: white
-					background-color: $pseudoBlue
 		.currency
 			+r(575)
 				margin-right: 0
-			.currency-btn
-				font-family: $Bitter-B
-				color: $topperTxt2
-				text-transform: uppercase
-				font-size: 11px
-				letter-spacing: 1.1px
-				line-height: 36px
-				border: none
-				outline: none
-				margin-right: 1px
-				padding: 0 10px
-				background-color: $btnBG
-				transition: color .5s, background .5s
-				cursor: pointer
-				&:last-of-type
-					margin-right: 0
-				&:not(.currency-btn--selected)
-					&:hover
-						//color: white
-						background-color: $blue4
-				&--selected
-					color: white
-					background-color: $pseudoBlue
+		.switch-btn
+			font-family: $SegoeUI-B
+			color: $topperTxt2
+			text-transform: uppercase
+			font-size: 11px
+			letter-spacing: 1.1px
+			line-height: 36px
+			border: none
+			outline: none
+			margin-right: 1px
+			padding: 0 10px
+			background-color: $btnBG
+			transition: color .5s, background .5s
+			text-decoration: none
+			display: inline-block
+			&:last-of-type
+				margin-right: 0
+			&:not(.switch-btn--selected)
+				&:hover
+					//color: white
+					background-color: $blue4
+			&--selected
+				color: white
+				background-color: $pseudoBlue
