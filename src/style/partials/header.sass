@@ -1,6 +1,5 @@
 .header
 	padding: 38px 0 63px 0 
-	//margin-bottom: 20px
 	border-bottom: 1px solid $gray6
 	+r(991)
 		padding: 20px 0
@@ -8,9 +7,6 @@
 	.control-bar
 		display: flex
 		align-items: center
-		//margin-bottom: 63px
-		+r(991)
-			//margin-bottom: 20px
 		+r(767)
 			flex-wrap: wrap
 			justify-content: space-between
@@ -30,9 +26,7 @@
 				margin-bottom: 10px
 			.logo-pic
 				transform: translate(-8px, 2px)
-				//text-decoration: none
 				+r(991)
-					//transform: none
 					width: 99px
 					height: 42px
 				+r(767)
@@ -43,12 +37,10 @@
 				color: $headerTxt
 				line-height: 0.8
 				letter-spacing: 0.3px
-				//text-decoration: none
 				padding: 0 0 0 11px
 				+r(991)
 					display: none
 		.search
-			//padding: 0 10px
 			position: relative
 			line-height: 0
 			margin-right: auto
@@ -68,8 +60,6 @@
 				color: $topperTxt2
 				padding: 0 35px 0 10px 
 				height: 33px
-				//line-height: 33px
-				//display: inline-block
 				width: 207px
 				outline: none
 				+r(991)
@@ -115,7 +105,8 @@
 					cursor: pointer
 					padding: 0 11px
 					margin: 0 5px
-					//margin-right: 1px
+					text-decoration: none
+					display: inline-block
 					line-height: 35px
 					transition: background .5s	
 					border-radius: 3px
@@ -124,7 +115,6 @@
 						margin: 0 3px
 						font-size: 10px
 					&:hover
-						//color: $pseudoBlue
 						background-color: $topperTxt3
 				&::after
 					content: ''
@@ -151,7 +141,6 @@
 						background: url('../img/icon-cart1.png') no-repeat center
 				.cart-added
 					display: inline-block
-					//opacity: 1
 			.cart-btn
 				font-family: $SegoeUI
 				font-size: 11px
@@ -165,7 +154,6 @@
 				background-color: $gray7
 				cursor: pointer
 				position: relative
-				//padding: 0 14px
 				transition: background .5s, color .5s
 				&::after
 					content: ''
@@ -178,7 +166,6 @@
 					background: url('../img/icon-cart.png') no-repeat center
 					transition: background .5s
 				&::before
-					//
 					content: ''
 					position: absolute
 					left: 0
